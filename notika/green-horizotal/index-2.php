@@ -1,4 +1,20 @@
 <!--Page OUTILS-->
+<?php
+require("Connexion_BD.php");
+
+$query = $conn->prepare("SELECT * FROM outils");
+$query->execute();
+
+$row = $query->fetchAll();
+$NumeroS = $row[0]["num_Serie"];
+$Type = $row[0]["type"];
+$Marque = $row[0]["marque"];
+$D_garantie = $row[0]["date_fin_garantie"];
+$D_control = $row[0]["date_control_regl"];
+$D_achat = $row[0]["date_achat"];
+$Description = $row[0]["description"];
+?>
+
 <!doctype html>
 <html class="no-js" lang="">
 
@@ -378,8 +394,8 @@
                         <div class="curved-inner-pro">
                             <div class="curved-ctn">
                                 <h1>Perceuse</h1>
-                                <p>Numéro : ___</p>
-                                <p>Marque : ___</p>
+                                <p>Numéro : <?= $NumeroS?></p>
+                                <p>Marque : <?= $Marque?></p>
                                 <p>Possedé par Monsieur/Madame : ___</p>
                             </div>
                         </div>
@@ -404,9 +420,9 @@
                     <div class="wb-traffic-inner notika-shadow sm-res-mg-t-30 tb-res-mg-t-30">
                         <div class="website-traffic-ctn">
                             <h2><span>Dates importantes</span></h2>
-                            <p>Date d'achat :___</p>
-                            <p>Date de fin de garantie : _____</p>
-                            <p>Date de controle règlementaire : ____</p>
+                            <p>Date d'achat :<?= $D_achat?></p>
+                            <p>Date de fin de garantie : <?= $D_garantie?></p>
+                            <p>Date de controle règlementaire : <?= $D_control?></p>
                         </div>
                     </div>
                 </div>

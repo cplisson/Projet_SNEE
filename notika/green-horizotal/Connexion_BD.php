@@ -2,7 +2,7 @@
             $servername = 'localhost';
             $username = 'root';
             $password = 'root';
-            $dbname = 'Projet_SNEE';
+            $dbname = 'snee';
             //On essaie de se connecter
 			
 

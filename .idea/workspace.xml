@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c4f0b451-9a31-44c4-a6f4-d869a7ed4e81" name="Changes" comment="MAJ gestion employe">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/css/dialog/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/css/dialog/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/js/dialog/dialog-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/js/dialog/dialog-active.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +72,7 @@
       <workItem from="1648128118986" duration="23000" />
       <workItem from="1648128144181" duration="4362000" />
       <workItem from="1648136129414" duration="1487000" />
-      <workItem from="1648729005660" duration="3668000" />
+      <workItem from="1648729005660" duration="5864000" />
     </task>
     <task id="LOCAL-00001" summary="ajout logo entreprise">
       <created>1646321204008</created>
@@ -157,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648732195076</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="MAJ gestion employe">
+      <created>1648732768425</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1648732768425</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

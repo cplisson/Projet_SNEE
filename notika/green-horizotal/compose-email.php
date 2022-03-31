@@ -475,7 +475,7 @@
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Nom de l'outil">
+                                    <input type="text" class="form-control" name="NomOUTIL" placeholder="Nom de l'outil">
                                 </div>
                             </div>
                         </div>
@@ -509,12 +509,12 @@
                                             <div class="form-ic-cmp">
                                                 <i class="notika-icon notika-calendar"></i>
                                             </div>
-                                            <select class="selectpicker" data-live-search="true">
+                                            <select class="selectpicker" data-live-search="true" name="TypeOUTIL">
                                                 <option> Type d'outil </option>
                                                 <option>Perceuse</option>
                                                 <option>Marteau</option>
                                                 <option>Rallonge</option>
-                                                <option>Disquese</option>
+                                                <option>Disqueuse</option>
                                                 <option>Boite à outils</option>
                                             </select>
                                         </div>
@@ -529,7 +529,7 @@
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Marque de l'outil">
+                                    <input type="text" class="form-control" name="MarqueOUTIL" placeholder="Marque de l'outil">
                                 </div>
                             </div>
                         </div>
@@ -541,7 +541,7 @@
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Numéro de série">
+                                    <input type="text" class="form-control" name="NumeroOutil" placeholder="Numéro de série">
                                 </div>
                             </div>
                         </div>
@@ -553,7 +553,7 @@
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" data-mask="99/99/9999" placeholder="Date d'achat : jj/mm/aaaa">
+                                    <input type="text" class="form-control" data-mask="99/99/9999" name="DA" placeholder="Date d'achat : jj/mm/aaaa">
                                 </div>
                             </div>
                         </div>
@@ -565,7 +565,7 @@
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" data-mask="99/99/9999" placeholder="Date de contrôle réglementaire : jj/mm/aaaa">
+                                    <input type="text" class="form-control" data-mask="99/99/9999" name="DC" placeholder="Date de contrôle réglementaire : jj/mm/aaaa">
                                 </div>
                             </div>
                         </div>
@@ -577,7 +577,7 @@
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" data-mask="99/99/9999" placeholder="Date de fin de garantie : jj/mm/aaaa">
+                                    <input type="text" class="form-control" data-mask="99/99/9999" name="DG" placeholder="Date de fin de garantie : jj/mm/aaaa">
                                 </div>
                             </div>
                         </div>
@@ -806,3 +806,73 @@
 </body>
 
 </html>
+
+<?php
+
+ 
+
+if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueOUTIL'])&& isset($_POST['NumeroOUTIL'])&& isset($_POST['DA'])&& isset($_POST['DC'])&& isset($_POST['DG']))
+{
+		   
+    $nomOUTIL = $_POST["NomOUTIL"];
+    $typeOUTIL = $_POST["TypeOUTIL"];
+	$marqueOUTIL = $_POST["MarqueOUTIL"];
+	$numOUTIL = $_POST["NumeroOUTIL"];
+	$Dachat = $_POST["DA"];
+    $Dcontrole = $_POST["DC"];
+    $Dgarantie = $_POST["DG"];
+	 
+
+    if (empty($nomOUTIL) or empty($typeOUTIL) or empty($marqueOUTIL) or empty($numOUTIL) or empty($Dachat)or empty($Dcontrole)or empty($Dgarantie))
+    {
+
+       echo "
+       <div class = "."error".">
+       Merci de remplir tous les champs
+       </div>";
+
+    }
+    else
+    {
+        $query = $conn -> query("SELECT * FROM outils WHERE num_Serie = '".$numOUTIL."'");
+
+        $result = $query -> fetch();
+
+        if ($result)
+        {
+
+            echo "
+            <div class = "."error".">
+            Un outil possède déjà ce numéro de série, veuillez vérifier.
+            </div>";
+
+        }
+
+        else
+        {
+
+
+            $conn -> exec("INSERT INTO outil (numSerie, type, marque, date_fin_grantie, date_control_regl, date_achat) Values ('".$numOUTIL."','".$typeOUTIL."','".$marqueOUTIL."', '".$Dgarantie."','".$Dcontrole."','".$Dachat."')");
+
+            $query = $conn -> query("SELECT * FROM outils WHERE numSerie = '".$numOUTIL."' AND type = '".$typeOUTIL."' and marque = '".$marqueOUTIL."' AND date_fin_grantie = '".$Dgarantie."' AND date_control_regl = '".$Dcontrole."'AND date_achat = '".$Dachat."'" );
+            $result = $query -> fetch();
+
+			$nomOUTIL = $_POST["NomOUTIL"];
+            $typeOUTIL = $_POST["TypeOUTIL"];
+            $marqueOUTIL = $_POST["MarqueOUTIL"];
+            $numOUTIL = $_POST["NumeroOUTIL"];
+            $Dachat = $_POST["DA"];
+            $Dcontrole = $_POST["DC"];
+            $Dgarantie = $_POST["DG"];
+			
+			 echo "
+            <div class = "."error".">
+            Votre compte à bien été créé.
+            </div>";
+               exit();
+
+        }
+    }
+
+}
+?>

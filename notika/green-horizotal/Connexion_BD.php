@@ -1,7 +1,7 @@
 <?php
             $servername = 'localhost';
             $username = 'root';
-            $password = 'root';
+            $password = '';
             $dbname = 'snee';
             //On essaie de se connecter
 			

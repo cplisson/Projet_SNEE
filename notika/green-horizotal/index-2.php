@@ -161,7 +161,7 @@ $Description = $row[0]["description"];
                                     <ul id="demoevent" class="collapse dropdown-header-top">
                                         <li><a href="inbox.html">Inbox</a></li>
                                         <li><a href="view-email.html">View Email</a></li>
-                                        <li><a href="compose-email.html">Compose Email</a></li>
+                                        <li><a href="compose-email.php">Compose Email</a></li>
                                     </ul>
                                 </li>
                                 <li><a data-toggle="collapse" data-target="#democrou" href="#">Interface</a>
@@ -289,7 +289,7 @@ $Description = $row[0]["description"];
                                 </li>
                                 <li><a href="view-email.html">View Email</a>
                                 </li>
-                                <li><a href="compose-email.html">Compose Email</a>
+                                <li><a href="compose-email.php">Compose Email</a>
                                 </li>
                             </ul>
                         </div>

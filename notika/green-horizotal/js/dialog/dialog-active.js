@@ -17,19 +17,18 @@
 
 	//Success Message
 	$('#sa-success').on('click', function(){
-		swal("Good job!", "Lorem ipsum dolor cry sit amet, consectetur adipiscing elit. Sed lorem erat, tincidunt vitae ipsum et, Spensaduran pellentesque maximus eniman. Mauriseleifend ex semper, lobortis purus.", "success")
+		swal("Bravo!", "L'employé va être ajouté à la base de données", "success")
 	});
 
 	//Warning Message
 	$('#sa-warning').on('click', function(){
 		swal({   
-			title: "Are you sure?",   
-			text: "You will not be able to recover this imaginary file!",   
+			title: "Êtes vous sûre de vouloir supprimer l'employé ?",
 			type: "warning",   
 			showCancelButton: true,   
-			confirmButtonText: "Yes, delete it!",
+			confirmButtonText: "Supprimer",
 		}).then(function(){
-			swal("Deleted!", "Your imaginary file has been deleted.", "success"); 
+			swal("Suppression validée!", "L'employé a bien été supprimé.", "success");
 		});
 	});
 	

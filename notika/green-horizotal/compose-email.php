@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-include('Connexion_BD.php');
+include('fonctions_php/Connexion_BD.php');
 
 ?>
 
@@ -484,7 +484,7 @@ include('Connexion_BD.php');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" name="NomOUTIL" placeholder="Nom de l'outil">
+                                    <input type="text" class="form-control" name="NomOUTIL" id="NomOUTIL" placeholder="Nom de l'outil">
                                 </div>
                             </div>
                         </div>
@@ -498,12 +498,12 @@ include('Connexion_BD.php');
                                             <p>Photo de l'outil</p>
                                         </div>
                                         <div id="dropzone1" class="multi-uploader-cs">
-                                            <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
+                                            <input type="file" disabled class="dropzone dropzone-nk needsclick" id="demo1-upload">
                                                 <div class="dz-message needsclick download-custom">
                                                     <i class="notika-icon notika-cloud"></i>
                                                     <h2>Glisser le ficher ou cliquer pour télécharger la photo.</h2>
                                                 </div>
-                                            </form>
+                                            </input>
                                         </div>
                                     </div>
                                 </div>
@@ -606,14 +606,14 @@ include('Connexion_BD.php');
                     <div class="cmp-tb-hd">
                         <p>Notice d'utilisation de l'outil</p>
                     </div>
-                    <div id="dropzone1" class="multi-uploader-cs">
-                        <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
+                    <input type="file" disabled id="dropzone1" class="multi-uploader-cs">
+                        <div class="dropzone dropzone-nk needsclick" id="demo1-upload">
                             <div class="dz-message needsclick download-custom">
                                 <i class="notika-icon notika-cloud"></i>
                                 <h2>Glisser le ficher ou cliquer pour télécharger.</h2>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </input>
                 </div>
             </div>
         </div>
@@ -622,18 +622,20 @@ include('Connexion_BD.php');
 <!-- Dropzone area End-->
 
 <!-- Start bouton de confirmation d'ajout d'un outil -->
+<button class="btn btn-primary" type="submit">Login</button>
+</form>
 <div class="buttons-area">
     <div class="container">
         <div class="dialog-inner mg-t-30">
             <div class="dialog-pro dialog">
-                <button class="btn btn-info" id="sa-success" data-from="bottom" data-align="center" type="submit"><i ></i>Ajouter l'outil</button>
+                <button class="btn btn-info" id="sa-success" data-from="bottom" data-align="center"><i ></i>Ajouter l'outil</button>
             </div>
         </div>
     </div>
 </div>
-<!-- End bouton de confirmation d'ajout d'un outil -->
+<!-- End bouton de confirmation d'ajout d'un outil type="submit" form="form1"-->
 
-</form>
+
 
 
 <!-- Start Footer area-->

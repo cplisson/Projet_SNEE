@@ -304,7 +304,7 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
                                 <ul id="demoevent" class="collapse dropdown-header-top">
                                     <li><a href="inbox.html">Inbox</a></li>
                                     <li><a href="view-email.html">View Email</a></li>
-                                    <li><a href="compose-email.html">Compose Email</a></li>
+                                    <li><a href="compose-email.php">Compose Email</a></li>
                                 </ul>
                             </li>
                             <li><a data-toggle="collapse" data-target="#democrou" href="#">Interface</a>
@@ -433,7 +433,7 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
                             </li>
                             <li><a href="view-email.html">View Email</a>
                             </li>
-                            <li><a href="compose-email.html">Compose Email</a>
+                            <li><a href="compose-email.php">Compose Email</a>
                             </li>
                         </ul>
                     </div>

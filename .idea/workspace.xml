@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="669ae0a4-c721-4fab-9762-83f54a4d2f38" name="Changes" comment="view-email 2" />
+    <list default="true" id="c4f0b451-9a31-44c4-a6f4-d869a7ed4e81" name="Changes" comment="MAJ gestion employe">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/css/dialog/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/css/dialog/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/js/dialog/dialog-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/js/dialog/dialog-active.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,87 +15,157 @@
   <component name="ComposerSettings">
     <execution />
   </component>
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="4" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="25pB36EFfxHeYmHRyjrHhyCNzal" />
+  <component name="ProjectId" id="25s6AHY3l9ApXUqFivgThbWV3dt" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="codeWithMe.voiceChat.enabledByDefault" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\leapa_qj1lwwf\PhpstormProjects\Projet_SNEE\notika\green-horizotal\img\logo" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\leapa_qj1lwwf\AppData\Roaming\Subversion</configuration>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="669ae0a4-c721-4fab-9762-83f54a4d2f38" name="Changes" comment="" />
-      <created>1646213944737</created>
+      <changelist id="c4f0b451-9a31-44c4-a6f4-d869a7ed4e81" name="Changes" comment="" />
+      <created>1646303305092</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1646213944737</updated>
-      <workItem from="1646213946588" duration="2425000" />
-      <workItem from="1646238811721" duration="2027000" />
-      <workItem from="1646319605230" duration="625000" />
-      <workItem from="1646917955668" duration="11896000" />
-      <workItem from="1647533545532" duration="1002000" />
-      <workItem from="1648129798216" duration="3188000" />
-      <workItem from="1648135938800" duration="1275000" />
-      <workItem from="1648729025874" duration="4277000" />
-      <workItem from="1648997504570" duration="372000" />
+      <updated>1646303305092</updated>
+      <workItem from="1646303308568" duration="11692000" />
+      <workItem from="1646917965503" duration="435000" />
+      <workItem from="1646918416530" duration="8276000" />
+      <workItem from="1646926806095" duration="5419000" />
+      <workItem from="1647523079301" duration="12245000" />
+      <workItem from="1647596545421" duration="5436000" />
+      <workItem from="1648128118986" duration="23000" />
+      <workItem from="1648128144181" duration="4362000" />
+      <workItem from="1648136129414" duration="1487000" />
+      <workItem from="1648729005660" duration="5864000" />
     </task>
-    <task id="LOCAL-00001" summary="page je reçois">
-      <created>1646925867115</created>
+    <task id="LOCAL-00001" summary="ajout logo entreprise">
+      <created>1646321204008</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1646925867115</updated>
+      <updated>1646321204008</updated>
     </task>
-    <task id="LOCAL-00002" summary="commit">
-      <created>1646927819911</created>
+    <task id="LOCAL-00002" summary="ajout logo entreprise">
+      <created>1646321522636</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1646927819911</updated>
+      <updated>1646321522636</updated>
     </task>
-    <task id="LOCAL-00003" summary="view-email">
-      <created>1646931210369</created>
+    <task id="LOCAL-00003" summary="Modification en-tete">
+      <created>1646326124050</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1646931210369</updated>
+      <updated>1646326124050</updated>
     </task>
-    <task id="LOCAL-00004" summary="view-email 2">
-      <created>1646931432816</created>
+    <task id="LOCAL-00004" summary="Ajout favicon">
+      <created>1646326327947</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1646931432816</updated>
+      <updated>1646326327947</updated>
     </task>
-    <task id="LOCAL-00005" summary="view-email 2">
-      <created>1648729609525</created>
+    <task id="LOCAL-00005" summary="Ajout favicon">
+      <created>1646328271494</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1648729609525</updated>
+      <updated>1646328271494</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Logo sans background sur les trois dashboard">
+      <created>1646919781729</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646919781729</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Logo sans background sur les trois dashboard">
+      <created>1646920436529</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646920436529</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Page RECHERCHE OUTILS depuis page widgets">
+      <created>1646926028867</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646926028867</updated>
+    </task>
+    <task id="LOCAL-00009" summary="resolution probleme">
+      <created>1646927673554</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646927673554</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Ajout/Suppression outil">
+      <created>1646932183805</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646932183805</updated>
+    </task>
+    <task id="LOCAL-00011" summary="MAJ ajout d'outil">
+      <created>1647535663933</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1647535663933</updated>
+    </task>
+    <task id="LOCAL-00012" summary="MAJ gestion employe">
+      <created>1648732195076</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1648732195076</updated>
+    </task>
+    <task id="LOCAL-00013" summary="MAJ gestion employe">
+      <created>1648732768425</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1648732768425</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -108,10 +183,19 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="page je reçois" />
-    <MESSAGE value="commit" />
-    <MESSAGE value="view-email" />
-    <MESSAGE value="view-email 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="view-email 2" />
+    <MESSAGE value="ajout logo entreprise" />
+    <MESSAGE value="Modification en-tete" />
+    <MESSAGE value="Ajout favicon" />
+    <MESSAGE value="Logo sans background sur les trois dashboard" />
+    <MESSAGE value="Page RECHERCHE OUTILS depuis page widgets" />
+    <MESSAGE value="resolution probleme" />
+    <MESSAGE value="Ajout/Suppression outil" />
+    <MESSAGE value="MAJ ajout d'outil" />
+    <MESSAGE value="MAJ gestion employe" />
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ gestion employe" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

@@ -1,6 +1,6 @@
 <!--Page OUTILS-->
 <?php
-require("Connexion_BD.php");
+require("fonctions_php\Connexion_BD.php");
 
 $query = $conn->prepare("SELECT * FROM outils");
 $query->execute();

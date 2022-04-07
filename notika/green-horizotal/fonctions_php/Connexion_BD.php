@@ -1,7 +1,7 @@
 <?php
             $servername = 'localhost';
             $username = 'root';
-            $password = 'root';
+            $password = '';
             $dbname = 'snee';
             //On essaie de se connecter
 			
@@ -17,5 +17,6 @@
             /*On capture les exceptions si une exception est lancée et on affiche
              *les informations relatives à celle-ci*/
             catch(PDOException $e){
+                exit ('<b>Erreur de connection à la ligne: '.$e->getLine().':</b>'.$e->getMessage());
             }
 ?>  

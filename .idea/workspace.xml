@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4f0b451-9a31-44c4-a6f4-d869a7ed4e81" name="Changes" comment="MAJ gestion employe">
+    <list default="true" id="669ae0a4-c721-4fab-9762-83f54a4d2f38" name="Changes" comment="commit">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/css/dialog/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/css/dialog/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/js/dialog/dialog-active.js" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/js/dialog/dialog-active.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/compose-email.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/compose-email.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/AjoutOutils.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/AjoutOutils.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/Connexion_BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/Connexion_BD.php" afterDir="false" />
+    </list>
+    <list id="9c08ddb5-ae38-4ff7-aa2d-bdcce7afc01b" name="Changes by victo" comment="">
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/index-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/index-2.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +53,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\leapa_qj1lwwf\PhpstormProjects\Projet_SNEE\notika\green-horizotal\img\logo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal" />
+      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal\fonctions_php" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -165,7 +172,21 @@
       <option name="project" value="LOCAL" />
       <updated>1648732768425</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="view-email 2">
+      <created>1648998566561</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1648998566561</updated>
+    </task>
+    <task id="LOCAL-00015" summary="commit">
+      <created>1649000862000</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1649000862000</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -192,7 +213,20 @@
     <MESSAGE value="Ajout/Suppression outil" />
     <MESSAGE value="MAJ ajout d'outil" />
     <MESSAGE value="MAJ gestion employe" />
-    <option name="LAST_COMMIT_MESSAGE" value="MAJ gestion employe" />
+    <MESSAGE value="view-email 2" />
+    <MESSAGE value="commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/notika/green-horizotal/compose-email.php</url>
+          <line>3</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

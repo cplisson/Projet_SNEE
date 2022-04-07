@@ -1,0 +1,19 @@
+Index: notika/green-horizotal/Connexion_BD.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?php\r\n            $servername = 'localhost';\r\n            $username = 'root';\r\n            $password = 'root';\r\n            $dbname = 'snee';\r\n            //On essaie de se connecter\r\n\t\t\t\r\n\r\n\t   \r\n            try{\r\n                $conn = new PDO(\"mysql:host=$servername;dbname=$dbname\", $username, $password);\r\n\t\r\n                //On définit le mode d'erreur de PDO sur Exception\r\n                $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);\r\n            }\r\n\r\n            /*On capture les exceptions si une exception est lancée et on affiche\r\n             *les informations relatives à celle-ci*/\r\n            catch(PDOException $e){\r\n            }\r\n?>  
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/notika/green-horizotal/Connexion_BD.php b/notika/green-horizotal/Connexion_BD.php
+--- a/notika/green-horizotal/Connexion_BD.php	(revision cfed9c62872fa9592daa96ca117e9a8748d7ad4a)
++++ b/notika/green-horizotal/Connexion_BD.php	(date 1648133409240)
+@@ -1,7 +1,7 @@
+ <?php
+             $servername = 'localhost';
+             $username = 'root';
+-            $password = 'root';
++            $password = '';
+             $dbname = 'snee';
+             //On essaie de se connecter
+ 			

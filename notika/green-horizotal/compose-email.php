@@ -1,72 +1,8 @@
-<!--Page Ajout habilitation -->
 <?php
 
- 
+session_start();
+include('fonctions_php/Connexion_BD.php');
 
-if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueOUTIL'])&& isset($_POST['NumeroOUTIL'])&& isset($_POST['DA'])&& isset($_POST['DC'])&& isset($_POST['DG']))
-{
-		   
-    $nomOUTIL = $_POST["NomOUTIL"];
-    $typeOUTIL = $_POST["TypeOUTIL"];
-	$marqueOUTIL = $_POST["MarqueOUTIL"];
-	$numOUTIL = $_POST["NumeroOUTIL"];
-	$Dachat = $_POST["DA"];
-    $Dcontrole = $_POST["DC"];
-    $Dgarantie = $_POST["DG"];
-	 
-
-    if (empty($nomOUTIL) or empty($typeOUTIL) or empty($marqueOUTIL) or empty($numOUTIL) or empty($Dachat)or empty($Dcontrole)or empty($Dgarantie))
-    {
-
-       echo "
-       <div class = "."error".">
-       Merci de remplir tous les champs
-       </div>";
-
-    }
-    else
-    {
-        $query = $conn -> query("SELECT * FROM outils WHERE num_Serie = '".$numOUTIL."'");
-
-        $result = $query -> fetch();
-
-        if ($result)
-        {
-
-            echo "
-            <div class = "."error".">
-            Un outil possède déjà ce numéro de série, veuillez vérifier.
-            </div>";
-
-        }
-
-        else
-        {
-
-
-            $conn -> exec("INSERT INTO outil (numSerie, type, marque, date_fin_grantie, date_control_regl, date_achat) Values ('".$numOUTIL."','".$typeOUTIL."','".$marqueOUTIL."', '".$Dgarantie."','".$Dcontrole."','".$Dachat."')");
-
-            $query = $conn -> query("SELECT * FROM outils WHERE numSerie = '".$numOUTIL."' AND type = '".$typeOUTIL."' and marque = '".$marqueOUTIL."' AND date_fin_grantie = '".$Dgarantie."' AND date_control_regl = '".$Dcontrole."'AND date_achat = '".$Dachat."'" );
-            $result = $query -> fetch();
-
-			$nomOUTIL = $_POST["NomOUTIL"];
-            $typeOUTIL = $_POST["TypeOUTIL"];
-            $marqueOUTIL = $_POST["MarqueOUTIL"];
-            $numOUTIL = $_POST["NumeroOUTIL"];
-            $Dachat = $_POST["DA"];
-            $Dcontrole = $_POST["DC"];
-            $Dgarantie = $_POST["DG"];
-			
-			 echo "
-            <div class = "."error".">
-            Votre compte à bien été créé.
-            </div>";
-               exit();
-
-        }
-    }
-
-}
 ?>
 
 <!doctype html>
@@ -529,7 +465,10 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
     </div>
 </div>
 <!-- Main Menu area End-->
+
 <!-- Formulaire -->
+<form action='fonctions_php/AjoutOutils.php' method="POST">
+
 <div class="form-element-area">
     <div class="container">
         <div class="row">
@@ -545,7 +484,7 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" name="NomOUTIL" placeholder="Nom de l'outil">
+                                    <input type="text" class="form-control" name="NomOUTIL" id="NomOUTIL" placeholder="Nom de l'outil">
                                 </div>
                             </div>
                         </div>
@@ -559,12 +498,12 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
                                             <p>Photo de l'outil</p>
                                         </div>
                                         <div id="dropzone1" class="multi-uploader-cs">
-                                            <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
+                                            <input type="file" disabled class="dropzone dropzone-nk needsclick" id="demo1-upload">
                                                 <div class="dz-message needsclick download-custom">
                                                     <i class="notika-icon notika-cloud"></i>
                                                     <h2>Glisser le ficher ou cliquer pour télécharger la photo.</h2>
                                                 </div>
-                                            </form>
+                                            </input>
                                         </div>
                                     </div>
                                 </div>
@@ -655,9 +594,9 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
                 </div>
             </div>
         </div>
-
     </div>
 </div>
+
 <!-- Dropzone area Start : insertion de la notice de l'outil-->
 <div class="dropzone-area">
     <div class="container">
@@ -667,21 +606,24 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
                     <div class="cmp-tb-hd">
                         <p>Notice d'utilisation de l'outil</p>
                     </div>
-                    <div id="dropzone1" class="multi-uploader-cs">
-                        <form action="/upload" class="dropzone dropzone-nk needsclick" id="demo1-upload">
+                    <input type="file" disabled id="dropzone1" class="multi-uploader-cs">
+                        <div class="dropzone dropzone-nk needsclick" id="demo1-upload">
                             <div class="dz-message needsclick download-custom">
                                 <i class="notika-icon notika-cloud"></i>
                                 <h2>Glisser le ficher ou cliquer pour télécharger.</h2>
                             </div>
-                        </form>
-                    </div>
+                        </div>
+                    </input>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!-- Dropzone area End-->
+
 <!-- Start bouton de confirmation d'ajout d'un outil -->
+<button class="btn btn-primary" type="submit">Login</button>
+</form>
 <div class="buttons-area">
     <div class="container">
         <div class="dialog-inner mg-t-30">
@@ -691,7 +633,11 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['TypeOUTIL'])&&isset($_POST['MarqueO
         </div>
     </div>
 </div>
-<!-- End bouton de confirmation d'ajout d'un outil -->
+<!-- End bouton de confirmation d'ajout d'un outil type="submit" form="form1"-->
+
+
+
+
 <!-- Start Footer area-->
 <div class="footer-copyright-area">
     <div class="container">

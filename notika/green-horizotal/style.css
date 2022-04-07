@@ -33,7 +33,7 @@
     19. Alert 
     20. color 
     21. tabs 
-    22. Wizard 
+    22.  Accueil employé 
     23. Dropdown triggering 
     24. Modals 
     25. Accordion 
@@ -1438,7 +1438,7 @@ ul.tab-ctn-list li:last-child{
     text-align: right;
 }
 /*----------------------------------------*/
-/* 22.  Wizard CSS
+/* 22.   Accueil employé CSS
 /*----------------------------------------*/
 ul.wizard-nav-ac{
 	text-align:center;

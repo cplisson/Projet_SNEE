@@ -1,14 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="669ae0a4-c721-4fab-9762-83f54a4d2f38" name="Changes" comment="commit">
+    <list default="true" id="c4f0b451-9a31-44c4-a6f4-d869a7ed4e81" name="Changes" comment="MAJ gestion employe">
+      <change afterPath="$PROJECT_DIR$/notika/green-horizotal/img/faviconSNEEv3.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2022_17_00__Changes_by_victo_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2022_17_00__Changes_by_victo_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2022_14_43__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_31_03_2022_14_43__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/404.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/404.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/animations.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/animations.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/buttons.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/buttons.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/code-editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/code-editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/color.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/color.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/notika/green-horizotal/compose-email.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/compose-email.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/AjoutOutils.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/AjoutOutils.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/Connexion_BD.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/Connexion_BD.php" afterDir="false" />
-    </list>
-    <list id="9c08ddb5-ae38-4ff7-aa2d-bdcce7afc01b" name="Changes by victo" comment="">
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/index-2.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/index-2.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/data-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/data-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/dropdown.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/dropdown.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/form-components.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/form-components.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/form-elements.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/form-elements.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/form-examples.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/form-examples.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/google-map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/image-cropper.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/image-cropper.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/img/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/inbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/inbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/index-3.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/index-3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/index-4.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/index-4.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/invoice.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/invoice.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/modals.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/modals.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/normal-table.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/normal-table.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/notification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/popovers.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/popovers.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/typography.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/typography.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/view-email.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/view-email.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/widgets.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/widgets.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/wizard.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/wizard.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,8 +57,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/notika/green-horizotal" />
+    </include_path>
   </component>
   <component name="ProjectId" id="25s6AHY3l9ApXUqFivgThbWV3dt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -46,17 +84,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/notika/green-horizotal/img" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal\img" />
       <recent name="C:\Users\leapa_qj1lwwf\PhpstormProjects\Projet_SNEE\notika\green-horizotal\img\logo" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal" />
-      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal\fonctions_php" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -172,21 +207,7 @@
       <option name="project" value="LOCAL" />
       <updated>1648732768425</updated>
     </task>
-    <task id="LOCAL-00014" summary="view-email 2">
-      <created>1648998566561</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1648998566561</updated>
-    </task>
-    <task id="LOCAL-00015" summary="commit">
-      <created>1649000862000</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1649000862000</updated>
-    </task>
-    <option name="localTasksCounter" value="16" />
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -213,20 +234,7 @@
     <MESSAGE value="Ajout/Suppression outil" />
     <MESSAGE value="MAJ ajout d'outil" />
     <MESSAGE value="MAJ gestion employe" />
-    <MESSAGE value="view-email 2" />
-    <MESSAGE value="commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/notika/green-horizotal/compose-email.php</url>
-          <line>3</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="LAST_COMMIT_MESSAGE" value="MAJ gestion employe" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

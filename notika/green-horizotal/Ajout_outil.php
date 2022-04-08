@@ -250,7 +250,7 @@ include('fonctions_php/Connexion_BD.php');
                                      
                                      
                                      
-                                    <li><a href="wizard.html"> Accueil employé</a></li>
+                                    <li><a href="Acceuil_E.html"> Accueil employé</a></li>
                                 </ul>
                             </li>
                             <li><a data-toggle="collapse" data-target="#demolibra" href="#"> Habilitation</a>
@@ -385,7 +385,7 @@ include('fonctions_php/Connexion_BD.php');
                             </li>
                              
                             </li>
-                            <li><a href="wizard.html"> Accueil employé</a>
+                            <li><a href="Acceuil_E.html"> Accueil employé</a>
                             </li>
                         </ul>
                     </div>
@@ -490,7 +490,7 @@ include('fonctions_php/Connexion_BD.php');
                         </div>
                     </div>
 
-                    <div class="dropzone-area">
+                    <!-- <div class="dropzone-area">
                         <div class="container">
                                 <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
                                     <div class="dropdone-nk mg-t-30">
@@ -508,7 +508,7 @@ include('fonctions_php/Connexion_BD.php');
                                     </div>
                                 </div>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="form-element-area">
                         <div class="container">
@@ -518,19 +518,18 @@ include('fonctions_php/Connexion_BD.php');
                                             <div class="form-ic-cmp">
                                                 <i class="notika-icon notika-calendar"></i>
                                             </div>
-                                            <select class="selectpicker" data-live-search="true" name="TypeOUTIL">
-                                                <option> Type d'outil </option>
-                                                <option>Perceuse</option>
-                                                <option>Marteau</option>
-                                                <option>Rallonge</option>
-                                                <option>Disqueuse</option>
-                                                <option>Boite à outils</option>
+                                            <select class="form-select" aria-label="Default select example" name="TypeOUTIL" id="TypeOUTIL">
+                                            <option selected id="0">Open this select menu</option>
+                                            <option id="1">One</option>
+                                            <option id="2">Two</option>
+                                            <option id="3">Three</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                         </div>
                     </div>
+
                     <div class="row">
                         <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
                             <div class="form-group ic-cmp-int">
@@ -598,7 +597,7 @@ include('fonctions_php/Connexion_BD.php');
 </div>
 
 <!-- Dropzone area Start : insertion de la notice de l'outil-->
-<div class="dropzone-area">
+<!-- <div class="dropzone-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-4 col-sm-4 col-xs-12">
@@ -618,7 +617,7 @@ include('fonctions_php/Connexion_BD.php');
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- Dropzone area End-->
 
 <!-- Start bouton de confirmation d'ajout d'un outil -->

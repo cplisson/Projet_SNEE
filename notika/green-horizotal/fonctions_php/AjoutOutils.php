@@ -3,6 +3,8 @@
 echo 'termine';
 session_start();
 include('Connexion_BD.php');
+include('../lib/phpqrcode/qrlib.php');
+
 
 echo 'etape 1';
 if (isset($_POST['NomOUTIL'])&& isset($_POST['MarqueOUTIL'])&& isset($_POST['TypeOUTIL'])&& isset($_POST['NumeroOutil'])&& isset($_POST['DA'])&& isset($_POST['DC'])&& isset($_POST['DG']))
@@ -17,7 +19,7 @@ if (isset($_POST['NomOUTIL'])&& isset($_POST['MarqueOUTIL'])&& isset($_POST['Typ
     $Dgarantie = htmlspecialchars($_POST["DG"]);
 
     echo 'etape 2';
-    if (empty($nomOUTIL) or empty($marqueOUTIL) or empty($typeOUTIL) or $typeOUTIL==0 or empty($numOUTIL) or empty($Dachat)or empty($Dcontrole)or empty($Dgarantie))
+    if (empty($nomOUTIL) or empty($marqueOUTIL) or empty($typeOUTIL) or $typeOUTIL=0 or empty($numOUTIL) or empty($Dachat) or empty($Dcontrole) or empty($Dgarantie))
     {
 
         echo "
@@ -58,6 +60,19 @@ if (isset($_POST['NomOUTIL'])&& isset($_POST['MarqueOUTIL'])&& isset($_POST['Typ
             <div class = "."error".">
             Votre compte à bien été créé.
             </div>";
+
+            $code = $numOUTIL;
+            $file = '../images/QR_code/'.$numOUTIL.'.png';
+            $chemin = $file;
+
+            if (!file_exists($chemin)){
+                QRcode::png($code, $chemin);
+                echo "Le ficher à été crée";
+            }
+            else{
+                echo "le fichier existe déjà";
+            }
+
             exit();
 
         }
@@ -66,7 +81,14 @@ if (isset($_POST['NomOUTIL'])&& isset($_POST['MarqueOUTIL'])&& isset($_POST['Typ
 }
 echo 'termine';
 echo $_POST['NomOUTIL'];
-echo $_POST['TypeOUTIL'];
+
+echo $nomOUTIL;
+echo $marqueOUTIL;
+echo $typeOUTIL;
+echo $numOUTIL;
+echo $Dachat;
+echo $Dcontrole;
+echo $Dgarantie;
 ?>
 
 

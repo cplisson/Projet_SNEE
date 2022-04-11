@@ -3,6 +3,12 @@
 session_start();
 include('fonctions_php/Connexion_BD.php');
 
+
+$Valid_ID = htmlspecialchars($_POST["NomOUTIL"]);;
+
+$req = $conn-> prepare("SELECT * from outils where num_Serie = ?");
+$req->execute(array($Valid_ID));
+$rep = $req->fetch();
 ?>
 
 <!doctype html>
@@ -468,7 +474,6 @@ include('fonctions_php/Connexion_BD.php');
 <!-- Main Menu area End-->
 
 <!-- Formulaire -->
-<form action='fonctions_php/AjoutOutils.php' method="POST">
 
 <div class="form-element-area">
     <div class="container">
@@ -476,7 +481,7 @@ include('fonctions_php/Connexion_BD.php');
             <div class="col-lg-12 col-md-10 col-sm-8 col-xs-8">
                 <div class="form-element-list mg-t-30">
                     <div class="cmp-tb-hd">
-                        <h1>Ajouter un outil</h1>
+                        <h1>informations Outils</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
@@ -484,109 +489,17 @@ include('fonctions_php/Connexion_BD.php');
                                 <div class="form-ic-cmp">
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
+                                <?php 
+                                echo $Valid_ID;
+                                $test = $rep['num_Serie']; ?>
+                                <?php $chemin = './images/QR_code/'.$test.'.png' ?>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" name="NomOUTIL" id="NomOUTIL" placeholder="Nom de l'outil">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- <div class="dropzone-area">
-                        <div class="container">
-                                <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                                    <div class="dropdone-nk mg-t-30">
-                                        <div class="cmp-tb-hd">
-                                            <p>Photo de l'outil</p>
-                                        </div>
-                                        <div id="dropzone1" class="multi-uploader-cs">
-                                            <input type="file" disabled class="dropzone dropzone-nk needsclick" id="demo1-upload">
-                                                <div class="dz-message needsclick download-custom">
-                                                    <i class="notika-icon notika-cloud"></i>
-                                                    <h2>Glisser le ficher ou cliquer pour télécharger la photo.</h2>
-                                                </div>
-                                            </input>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div> -->
-
-                    <div class="form-element-area">
-                        <div class="container">
-                                <div class="row">
-                                    <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                                        <div class="form-group ic-cmp-int">
-                                            <div class="form-ic-cmp">
-                                                <i class="notika-icon notika-calendar"></i>
-                                            </div>
-                                            <select class="form-select" aria-label="Default select example" name="TypeOUTIL" id="TypeOUTIL">
-                                            <option selected id="0">Open this select menu</option>
-                                            <option id="1">One</option>
-                                            <option id="2">Two</option>
-                                            <option id="3">Three</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" class="form-control" name="MarqueOUTIL" placeholder="Marque de l'outil">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" class="form-control" name="NumeroOutil" placeholder="Numéro de série">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" class="form-control" data-mask="99/99/9999" name="DA" placeholder="Date d'achat : jj/mm/aaaa">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" class="form-control" data-mask="99/99/9999" name="DC" placeholder="Date de contrôle réglementaire : jj/mm/aaaa">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" class="form-control" data-mask="99/99/9999" name="DG" placeholder="Date de fin de garantie : jj/mm/aaaa">
+                                    <div>ID : <?php echo $rep['num_Serie']; ?></div> 
+                                    <div>Type : <?php echo $rep['type_O']; ?></div> 
+                                    <div>marque : <?php echo $rep['marque']; ?></div> 
+                                    <div>date fin de garantie : <?php echo $rep['date_fin_garantie']; ?></div> 
+                                    <div>date de controle : <?php echo $rep['date_control_regl']; ?></div>
+                                    <div>QR code : <?php echo '<img src = "'.$chemin.'">' ?></div> 
                                 </div>
                             </div>
                         </div>
@@ -596,45 +509,6 @@ include('fonctions_php/Connexion_BD.php');
         </div>
     </div>
 </div>
-
-<!-- Dropzone area Start : insertion de la notice de l'outil-->
-<!-- <div class="dropzone-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-4 col-sm-4 col-xs-12">
-                <div class="dropdone-nk mg-t-30">
-                    <div class="cmp-tb-hd">
-                        <p>Notice d'utilisation de l'outil</p>
-                    </div>
-                    <input type="file" disabled id="dropzone1" class="multi-uploader-cs">
-                        <div class="dropzone dropzone-nk needsclick" id="demo1-upload">
-                            <div class="dz-message needsclick download-custom">
-                                <i class="notika-icon notika-cloud"></i>
-                                <h2>Glisser le ficher ou cliquer pour télécharger.</h2>
-                            </div>
-                        </div>
-                    </input>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- Dropzone area End-->
-
-<!-- Start bouton de confirmation d'ajout d'un outil -->
-<button class="btn btn-primary" type="submit">Login</button>
-</form>
-
-<div class="buttons-area">
-    <div class="container">
-        <div class="dialog-inner mg-t-30">
-            <div class="dialog-pro dialog">
-                <button class="btn btn-info" id="sa-success" data-from="bottom" data-align="center"><i ></i>Ajouter l'outil</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End bouton de confirmation d'ajout d'un outil type="submit" form="form1"-->
 
 
 

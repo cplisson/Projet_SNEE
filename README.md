@@ -7,7 +7,7 @@ Free Bootstrap admin dashboard
 
 ![Notika admin dashboard template preview](https://colorlib.com/wp/wp-content/uploads/sites/2/notika-free-creative-admin-dashboard.jpg)
 
-### Demo Site: [Here](https://colorlib.com/polygon/notika/index.html)
+### Demo Site: [Here](https://colorlib.com/polygon/notika/index.php)
 
 ### Changelog
 #### V 1.0.0

@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c4f0b451-9a31-44c4-a6f4-d869a7ed4e81" name="Changes" comment="Ajout favicon + visualisation des transmissions">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

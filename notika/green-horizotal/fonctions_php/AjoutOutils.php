@@ -3,20 +3,23 @@
 echo 'termine';
 session_start();
 include('Connexion_BD.php');
+include('../lib/phpqrcode/qrlib.php');
+
 
 echo 'etape 1';
-if (isset($_POST['NomOUTIL'])&&isset($_POST['MarqueOUTIL'])&& isset($_POST['NumeroOUTIL'])&& isset($_POST['DA'])&& isset($_POST['DC'])&& isset($_POST['DG']))
+if (isset($_POST['NomOUTIL'])&& isset($_POST['MarqueOUTIL'])&& isset($_POST['TypeOUTIL'])&& isset($_POST['NumeroOutil'])&& isset($_POST['DA'])&& isset($_POST['DC'])&& isset($_POST['DG']))
 {
 
     $nomOUTIL = htmlspecialchars($_POST["NomOUTIL"]);
-    $marqueOUTIL = $_POST["MarqueOUTIL"];
-    $numOUTIL = $_POST["NumeroOUTIL"];
-    $Dachat = $_POST["DA"];
-    $Dcontrole = $_POST["DC"];
-    $Dgarantie = $_POST["DG"];
+    $marqueOUTIL = htmlspecialchars($_POST["MarqueOUTIL"]);
+    $typeOUTIL = htmlspecialchars($_POST["TypeOUTIL"]);
+    $numOUTIL = htmlspecialchars($_POST["NumeroOutil"]);
+    $Dachat = htmlspecialchars($_POST["DA"]);
+    $Dcontrole = htmlspecialchars($_POST["DC"]);
+    $Dgarantie = htmlspecialchars($_POST["DG"]);
 
     echo 'etape 2';
-    if (empty($nomOUTIL) or empty($marqueOUTIL) or empty($numOUTIL) or empty($Dachat)or empty($Dcontrole)or empty($Dgarantie))
+    if (empty($nomOUTIL) or empty($marqueOUTIL) or empty($typeOUTIL) or $typeOUTIL=0 or empty($numOUTIL) or empty($Dachat) or empty($Dcontrole) or empty($Dgarantie))
     {
 
         echo "
@@ -27,12 +30,12 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['MarqueOUTIL'])&& isset($_POST['Nume
     }
     else
     {
-        $query = $conn -> query("SELECT * FROM outils WHERE num_Serie = '".$numOUTIL."'");
+        $req = $conn -> prepare('SELECT * FROM outils WHERE num_Serie = ?');
+        $req -> execute(array($numOUTIL));
+        $result = $req -> fetch();
 
-
-
-        $result = $query -> fetch();
-        $count = $result->rowcount();
+        
+        $count = $req->rowcount();
         echo 'etape 3';
         if ($count != 0)
         {
@@ -48,15 +51,28 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['MarqueOUTIL'])&& isset($_POST['Nume
         {
 
 
-            $conn -> exec("INSERT INTO outils (num_Serie, type, marque, date_fin_garantie, date_control_regl, date_achat) Values ('".$numOUTIL."','".$marqueOUTIL."', '".$Dgarantie."','".$Dcontrole."','".$Dachat."')");
+            $conn -> exec("INSERT INTO outils (num_Serie, type_O, marque, date_fin_garantie, date_control_regl, date_achat) Values ('".$numOUTIL."', '".$typeOUTIL."', '".$marqueOUTIL."', '".$Dgarantie."','".$Dcontrole."','".$Dachat."')");
 
-            $query = $conn -> query("SELECT * FROM outils WHERE numSerie = '".$numOUTIL."' and marque = '".$marqueOUTIL."' AND date_fin_grantie = '".$Dgarantie."' AND date_control_regl = '".$Dcontrole."'AND date_achat = '".$Dachat."'" );
+            $query = $conn -> query("SELECT * FROM outils WHERE num_Serie = '".$numOUTIL."' and type_O = '".$typeOUTIL."' and marque = '".$marqueOUTIL."' AND date_fin_garantie = '".$Dgarantie."' AND date_control_regl = '".$Dcontrole."'AND date_achat = '".$Dachat."'" );
             $result = $query -> fetch();
 
             echo "
             <div class = "."error".">
             Votre compte à bien été créé.
             </div>";
+
+            $code = $numOUTIL;
+            $file = '../images/QR_code/'.$numOUTIL.'.png';
+            $chemin = $file;
+
+            if (!file_exists($chemin)){
+                QRcode::png($code, $chemin);
+                echo "Le ficher à été crée";
+            }
+            else{
+                echo "le fichier existe déjà";
+            }
+
             exit();
 
         }
@@ -64,6 +80,15 @@ if (isset($_POST['NomOUTIL'])&&isset($_POST['MarqueOUTIL'])&& isset($_POST['Nume
 
 }
 echo 'termine';
+echo $_POST['NomOUTIL'];
+
+echo $nomOUTIL;
+echo $marqueOUTIL;
+echo $typeOUTIL;
+echo $numOUTIL;
+echo $Dachat;
+echo $Dcontrole;
+echo $Dgarantie;
 ?>
 
 

@@ -162,6 +162,7 @@ include('Menu_Gestion_E.html');
                     <div class="cmp-tb-hd">
                         <h1>Ajouter un employé</h1>
                     </div>
+                    <form action='fonctions_php/AjoutEmp.php' method="POST">
                     <div class="row">
                         <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
                             <div class="form-group ic-cmp-int">
@@ -169,7 +170,7 @@ include('Menu_Gestion_E.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Nom de l'employé">
+                                    <input type="text" name="NomEmp" class="form-control" placeholder="Nom de l'employé">
                                 </div>
                             </div>
                         </div>
@@ -181,7 +182,7 @@ include('Menu_Gestion_E.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Prénom de l'employé">
+                                    <input type="text" name="PrenomEmp" class="form-control" placeholder="Prénom de l'employé">
                                 </div>
                             </div>
                         </div>
@@ -193,7 +194,7 @@ include('Menu_Gestion_E.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Numéro de matricule">
+                                    <input type="text" name="MatEmp" class="form-control" placeholder="Numéro de matricule">
                                 </div>
                             </div>
                         </div>
@@ -202,17 +203,21 @@ include('Menu_Gestion_E.html');
                         <div class="container">
                             <div class="dialog-inner mg-t-30">
                                 <div class="dialog-pro dialog">
-                                    <button class="btn btn-info" id="sa-success" data-from="bottom" data-align="center"><i ></i>Ajouter l'employé</button>
+                                    <button class="btn btn-info" type="submit" id="sa-success" data-from="bottom" data-align="center"><i ></i>Ajouter l'employé</button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                        <!-- <button class="btn btn-primary" type="submit">Ajout employé</button> -->
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
 <!--Fin formulaire d'ajout d'un employe -->
+
+
 <!-- Formulaire de suppression d'un employé -->
 <div class="form-element-area">
     <div class="container">
@@ -222,6 +227,7 @@ include('Menu_Gestion_E.html');
                     <div class="cmp-tb-hd">
                         <h1>Supprimer un employé</h1>
                     </div>
+                    <form action='fonctions_php/SupprEmp.php' method="POST">
                     <div class="row">
                         <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
                             <div class="form-group ic-cmp-int">
@@ -229,7 +235,7 @@ include('Menu_Gestion_E.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Nom de l'employé">
+                                    <input type="text" name="NomEmp_Suppr" class="form-control" placeholder="Nom de l'employé">
                                 </div>
                             </div>
                         </div>
@@ -241,7 +247,7 @@ include('Menu_Gestion_E.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Prénom de l'employé">
+                                    <input type="text" name="PrenomEmp_Suppr" class="form-control" placeholder="Prénom de l'employé">
                                 </div>
                             </div>
                         </div>
@@ -253,20 +259,22 @@ include('Menu_Gestion_E.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" placeholder="Numéro de matricule">
+                                    <input type="text" name="MatEmp_Suppr" class="form-control" placeholder="Numéro de matricule">
                                 </div>
                             </div>
                             <div class="buttons-area">
                                 <div class="container">
                                     <div class="dialog-inner mg-t-30">
                                         <div class="dialog-pro dialog">
-                                            <button class="btn btn-info" id="sa-warning" data-from="bottom" data-align="center"><i ></i>Supprimer l'employé</button>
+                                            <button class="btn btn-info" type="submit" id="sa-warning" data-from="bottom" data-align="center"><i ></i>Supprimer l'employé</button>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                        <!-- <button class="btn btn-primary" type="submit">Suppression employé</button> -->
+                    </form>
                 </div>
             </div>
         </div>

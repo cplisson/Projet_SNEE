@@ -44,9 +44,8 @@ if (isset($_POST['NomEmp_Suppr'])&& isset($_POST['PrenomEmp_Suppr'])&& isset($_P
         else
         {
 
-
-            $conn -> exec("DELETE FROM employe WHERE num_mat_employe = '$suppr_mat'");
-
+            $query = $conn -> query ("UPDATE Employe SET nom_employe = null, prenom_employe = null, mdp_employe = null, is_admin = null, is_conduc = null, mail = null WHERE num_mat_employe = '$suppr_mat'");
+            //$conn -> exec("DELETE FROM employe WHERE num_mat_employe = '$suppr_mat'");
             //$query = $conn -> query("SELECT * FROM employe WHERE num_Serie = '".$numOUTIL."' and type_O = '".$typeOUTIL."' and marque = '".$marqueOUTIL."' AND date_fin_garantie = '".$Dgarantie."' AND date_control_regl = '".$Dcontrole."'AND date_achat = '".$Dachat."'" );
             //$result = $query -> fetch();
 

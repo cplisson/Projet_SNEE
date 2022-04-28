@@ -2,6 +2,7 @@
 <?php
 
 session_start();
+include('fonctions_php/Connexion_BD.php');
 include('Menu_Gestion_E.html');
 
 ?>

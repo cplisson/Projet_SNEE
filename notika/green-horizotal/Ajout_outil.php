@@ -307,18 +307,19 @@ include('Menu_Gestion_O.html');
 <!-- Dropzone area End-->
 
 <!-- Start bouton de confirmation d'ajout d'un outil -->
-<button class="btn btn-primary" type="submit">Login</button>
-</form>
+<!-- <button class="btn btn-primary" type="submit">Login</button>
+</form> -->
 
 <div class="buttons-area">
     <div class="container">
         <div class="dialog-inner mg-t-30">
             <div class="dialog-pro dialog">
-                <button class="btn btn-info" id="sa-success" data-from="bottom" data-align="center"><i ></i>Ajouter l'outil</button>
+                <button class="btn btn-info" id="sa-success" data-from="bottom" type="submit" data-align="center"><i ></i>Ajouter l'outil</button>
             </div>
         </div>
     </div>
 </div>
+</form>
 <!-- End bouton de confirmation d'ajout d'un outil type="submit" form="form1"-->
 
 

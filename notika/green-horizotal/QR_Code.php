@@ -161,7 +161,7 @@ include('Menu_Gestion_O.html');
             <div class="col-lg-12 col-md-10 col-sm-8 col-xs-8">
                 <div class="form-element-list mg-t-30">
                     <div class="cmp-tb-hd">
-                        <h1>Ajouter un outil</h1>
+                        <h1>Obtenir un QR code outil</h1>
                     </div>
                     <div class="row">
                         <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
@@ -179,28 +179,28 @@ include('Menu_Gestion_O.html');
             </div>
         </div>
     </div>
-    <br><button class="btn btn-primary" type="submit">Login</button>
+</div>
+<!-- Start bouton de confirmation d'ajout d'un outil -->
+<div class="buttons-area">
+    <div class="container">
+        <div class="dialog-inner mg-t-30">
+            <div class="dialog-pro dialog">
+                <button class="btn btn-info" id="sa-success" data-from="bottom" type="submit" data-align="center"><i ></i>Ajouter l'outil</button>
+            </div>
+        </div>
+    </div>
 </div>
 
-<!-- Start bouton de confirmation d'ajout d'un outil -->
+<!-- End bouton de confirmation d'ajout d'un outil -->
 
 </form>
 
 <?php 
 include('lib/phpqrcode/qrlib.php');
-echo '<img src="fonctions_php/Creation_QRcode.php">';
 ?>
 
-<div class="buttons-area">
-    <div class="container">
-        <div class="dialog-inner mg-t-30">
-            <div class="dialog-pro dialog">
-                <button class="btn btn-info" id="sa-success" data-from="bottom" data-align="center"><i ></i>Ajouter l'outil</button>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- End bouton de confirmation d'ajout d'un outil type="submit" form="form1"-->
+
+
 
 
 <!-- Start Footer area-->

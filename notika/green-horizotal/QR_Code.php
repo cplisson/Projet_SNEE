@@ -185,7 +185,7 @@ include('Menu_Gestion_O.html');
     <div class="container">
         <div class="dialog-inner mg-t-30">
             <div class="dialog-pro dialog">
-                <button class="btn btn-info" id="sa-success" data-from="bottom" type="submit" data-align="center"><i ></i>Ajouter l'outil</button>
+                <button class="btn btn-info" id="sa-success" data-from="bottom" type="submit" data-align="center"><i ></i>Obtenir les informations outil</button>
             </div>
         </div>
     </div>

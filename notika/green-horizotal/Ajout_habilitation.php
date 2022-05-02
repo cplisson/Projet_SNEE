@@ -100,44 +100,7 @@ include('Menu_Habilitations.html');
                 <div class="col-lg-12 col-md-10 col-sm-8 col-xs-12">
                     <div class="form-element-list mg-t-30">
                         <div class="cmp-tb-hd">
-                            <h1>Ajouter une habilitation à un employé</h1>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="form-group ic-cmp-int float-lb floating-lb">
-                                    <div class="form-ic-cmp">
-                                        <i class="notika-icon notika-support"></i>
-                                    </div>
-                                    <div class="nk-int-st">
-                                        <input type="text" class="form-control">
-                                        <label class="nk-label">Nom de l'employé</label>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="form-group ic-cmp-int float-lb floating-lb">
-                                    <div class="form-ic-cmp">
-                                        <i class="notika-icon notika-support"></i>
-                                    </div>
-                                    <div class="nk-int-st">
-                                        <input type="text" class="form-control">
-                                        <label class="nk-label">Prenom de l'employé</label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-                                <div class="form-group ic-cmp-int form-elet-mg">
-                                    <div class="form-ic-cmp">
-                                        <i class="notika-icon notika-credit-card"></i>
-                                    </div>
-                                    <div class="nk-int-st">
-                                        <input type="text" class="form-control" data-mask="9999 9999"
-                                            placeholder="Matricule de l'employé">
-                                    </div>
-                                </div>
-                            </div>
+                            <h1>Ajouter une habilitation</h1>
                         </div>
                         <div class="form-element-area">
                             <div class="container">

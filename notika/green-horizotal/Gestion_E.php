@@ -219,69 +219,7 @@ include('Menu_Gestion_E.html');
 <!--Fin formulaire d'ajout d'un employe -->
 
 
-<!-- Formulaire de suppression d'un employé -->
-<div class="form-element-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-10 col-sm-8 col-xs-8">
-                <div class="form-element-list mg-t-30">
-                    <div class="cmp-tb-hd">
-                        <h1>Supprimer un employé</h1>
-                    </div>
-                    <form action='fonctions_php/SupprEmp.php' method="POST">
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" name="NomEmp_Suppr" class="form-control" placeholder="Nom de l'employé">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" name="PrenomEmp_Suppr" class="form-control" placeholder="Prénom de l'employé">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
-                            <div class="form-group ic-cmp-int">
-                                <div class="form-ic-cmp">
-                                    <i class="notika-icon notika-calendar"></i>
-                                </div>
-                                <div class="nk-int-st">
-                                    <input type="text" name="MatEmp_Suppr" class="form-control" placeholder="Numéro de matricule">
-                                </div>
-                            </div>
-                            <div class="buttons-area">
-                                <div class="container">
-                                    <div class="dialog-inner mg-t-30">
-                                        <div class="dialog-pro dialog">
-                                            <button class="btn btn-info" type="submit" id="sa-warning" data-from="bottom" data-align="center"><i ></i>Supprimer l'employé</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                        <!-- <button class="btn btn-primary" type="submit">Suppression employé</button> -->
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--Fin formulaire de suppression d'un employe -->
+
 <!-- Start Footer area-->
 <div class="footer-copyright-area">
     <div class="container">

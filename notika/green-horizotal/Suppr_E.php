@@ -1,17 +1,19 @@
+<!--Page Ajout habilitation -->
 <?php
 
 session_start();
 include('fonctions_php/Connexion_BD.php');
-include('Menu_Gestion_O.html');
+include('Menu_Gestion_E.html');
+
 ?>
 
 <!doctype html>
-<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html">
+<html class="no-js" lang="" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Dashboard One | Notika - Notika Admin Template</title>
+    <title>Visualisation des transmissions | Notika - Notika Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- favicon
@@ -92,58 +94,58 @@ include('Menu_Gestion_O.html');
     <title>Dialog | Notika - Notika Admin Template</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-       <!-- favicon
-            ============================================ -->
+    <!-- favicon
+         ============================================ -->
     <link rel="shortcut icon" type="image/x-icon" href="img/faviconSNEEv3.ico">
-       <!-- Google Fonts
-            ============================================ -->
+    <!-- Google Fonts
+         ============================================ -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,900" rel="stylesheet">
-        <!-- Bootstrap CSS
-            ============================================ -->
+    <!-- Bootstrap CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
-        <!-- font awesome CSS
-            ============================================ -->
+    <!-- font awesome CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/font-awesome.min.css">
-        <!-- owl.carousel CSS
-            ============================================ -->
+    <!-- owl.carousel CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.css">
     <link rel="stylesheet" href="css/owl.transitions.css">
-        <!-- meanmenu CSS
-            ============================================ -->
+    <!-- meanmenu CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/meanmenu/meanmenu.min.css">
-        <!-- animate CSS
-            ============================================ -->
+    <!-- animate CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/animate.css">
-        <!-- normalize CSS
-            ============================================ -->
+    <!-- normalize CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/normalize.css">
-        <!-- mCustomScrollbar CSS
-            ============================================ -->
+    <!-- mCustomScrollbar CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/scrollbar/jquery.mCustomScrollbar.min.css">
-        <!-- Notika icon CSS
-            ============================================ -->
+    <!-- Notika icon CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/notika-custom-icon.css">
-        <!-- wave CSS
-            ============================================ -->
+    <!-- wave CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/wave/waves.min.css">
-        <!-- dialog CSS
-            ============================================ -->
+    <!-- dialog CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/dialog/sweetalert2.min.css">
     <link rel="stylesheet" href="css/dialog/dialog.css">
-        <!-- main CSS
-            ============================================ -->
+    <!-- main CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/main.css">
-        <!-- style CSS
-            ============================================ -->
+    <!-- style CSS
+        ============================================ -->
     <link rel="stylesheet" href="style.css">
-        <!-- responsive CSS
-            ============================================ -->
+    <!-- responsive CSS
+        ============================================ -->
     <link rel="stylesheet" href="css/responsive.css">
-        <!-- modernizr JS
-            ============================================ -->
+    <!-- modernizr JS
+        ============================================ -->
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
+</head>
 </head>
 
 
@@ -151,17 +153,27 @@ include('Menu_Gestion_O.html');
 <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
-
-<!-- Formulaire -->
-<form action='Info_Outils.php' method="POST">
-
+<!-- Formulaire de suppression d'un employé -->
 <div class="form-element-area">
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-10 col-sm-8 col-xs-8">
                 <div class="form-element-list mg-t-30">
                     <div class="cmp-tb-hd">
-                        <h1>Obtenir un QR code outil</h1>
+                        <h1>Supprimer un employé</h1>
+                    </div>
+                    <form action='fonctions_php/SupprEmp.php' method="POST">
+                    <div class="row">
+                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group ic-cmp-int">
+                                <div class="form-ic-cmp">
+                                    <i class="notika-icon notika-calendar"></i>
+                                </div>
+                                <div class="nk-int-st">
+                                    <input type="text" name="NomEmp_Suppr" class="form-control" placeholder="Nom de l'employé">
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
@@ -170,39 +182,40 @@ include('Menu_Gestion_O.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" name="NomOUTIL" id="NomOUTIL" placeholder="Nom de l'outil">
+                                    <input type="text" name="PrenomEmp_Suppr" class="form-control" placeholder="Prénom de l'employé">
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-lg-5 col-md-4 col-sm-4 col-xs-12">
+                            <div class="form-group ic-cmp-int">
+                                <div class="form-ic-cmp">
+                                    <i class="notika-icon notika-calendar"></i>
+                                </div>
+                                <div class="nk-int-st">
+                                    <input type="text" name="MatEmp_Suppr" class="form-control" placeholder="Numéro de matricule">
+                                </div>
+                            </div>
+                            <div class="buttons-area">
+                                <div class="container">
+                                    <div class="dialog-inner mg-t-30">
+                                        <div class="dialog-pro dialog">
+                                            <button class="btn btn-info" type="submit" id="sa-warning" data-from="bottom" data-align="center"><i ></i>Supprimer l'employé</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- <button class="btn btn-primary" type="submit">Suppression employé</button> -->
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Start bouton de confirmation d'ajout d'un outil -->
-<div class="buttons-area">
-    <div class="container">
-        <div class="dialog-inner mg-t-30">
-            <div class="dialog-pro dialog">
-                <button class="btn btn-info" id="sa-success" data-from="bottom" type="submit" data-align="center"><i ></i>Obtenir les informations outil</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- End bouton de confirmation d'ajout d'un outil -->
-
-</form>
-
-<?php 
-include('lib/phpqrcode/qrlib.php');
-?>
-
-
-
-
-
+<!--Fin formulaire de suppression d'un employe -->
 <!-- Start Footer area-->
 <div class="footer-copyright-area">
     <div class="container">
@@ -387,4 +400,3 @@ include('lib/phpqrcode/qrlib.php');
 </body>
 
 </html>
-

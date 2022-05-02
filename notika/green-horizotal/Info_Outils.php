@@ -252,7 +252,7 @@ $rep = $req->fetch();
                             <li><a data-toggle="collapse" data-target="#democrou" href="#">Gestion employés</a>
                                 <ul id="democrou" class="collapse dropdown-header-top">
                                      
-                                    <li><a href="Gestion_E.php">Gestion employés</a></li>
+                                    <li><a href="Gestion_E.php">Ajouter un  employé</a></li>
                                      
                                      
                                      
@@ -267,7 +267,7 @@ $rep = $req->fetch();
                                     <li><a href="Ajout_habilitation.php"> Ajouter une habilitation</a></li>
                                 </ul>
                             </li>
-                            <li><a data-toggle="collapse" data-target="#demodepart" href="Donner.html"> Je donne</a>
+                            <li><a data-toggle="collapse" data-target="#demodepart" href="Donner.php"> Je donne</a>
                                 <ul id="#demodepart" class="collapse dropdown-header-top">
                                      
                                      
@@ -384,7 +384,7 @@ $rep = $req->fetch();
                         <ul class="notika-main-menu-dropdown">
                             <li><a href="animations.html"> </a>
                             </li>
-                            <li><a href="Gestion_E.php">Gestion employés</a>
+                            <li><a href="Gestion_E.php">Ajouter un  employé</a>
                             </li>
                              
                             </li>

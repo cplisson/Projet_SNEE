@@ -205,10 +205,10 @@ include('Menu_Gestion_O.html');
                                                 <i class="notika-icon notika-calendar"></i>
                                             </div>
                                             <select class="form-select" aria-label="Default select example" name="TypeOUTIL" id="TypeOUTIL">
-                                            <option selected id="0">Open this select menu</option>
-                                            <option id="1">One</option>
-                                            <option id="2">Two</option>
-                                            <option id="3">Three</option>
+                                            <option selected id="0">Type outil</option>
+                                            <option id="1">Perceuse</option>
+                                            <option id="2">Visseuse</option>
+                                            <option id="3">Perforateur</option>
                                             </select>
                                         </div>
                                     </div>
@@ -307,18 +307,19 @@ include('Menu_Gestion_O.html');
 <!-- Dropzone area End-->
 
 <!-- Start bouton de confirmation d'ajout d'un outil -->
-<button class="btn btn-primary" type="submit">Login</button>
-</form>
+<!-- <button class="btn btn-primary" type="submit">Login</button>
+</form> -->
 
 <div class="buttons-area">
     <div class="container">
         <div class="dialog-inner mg-t-30">
             <div class="dialog-pro dialog">
-                <button class="btn btn-info" id="sa-success" data-from="bottom" data-align="center"><i ></i>Ajouter l'outil</button>
+                <button class="btn btn-info" id="sa-success" data-from="bottom" type="submit" data-align="center"><i ></i>Ajouter l'outil</button>
             </div>
         </div>
     </div>
 </div>
+</form>
 <!-- End bouton de confirmation d'ajout d'un outil type="submit" form="form1"-->
 
 

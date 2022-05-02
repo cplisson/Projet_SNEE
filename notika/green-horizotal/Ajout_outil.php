@@ -205,10 +205,10 @@ include('Menu_Gestion_O.html');
                                                 <i class="notika-icon notika-calendar"></i>
                                             </div>
                                             <select class="form-select" aria-label="Default select example" name="TypeOUTIL" id="TypeOUTIL">
-                                            <option selected id="0">Open this select menu</option>
-                                            <option id="1">One</option>
-                                            <option id="2">Two</option>
-                                            <option id="3">Three</option>
+                                            <option selected id="0">Type outil</option>
+                                            <option id="1">Perceuse</option>
+                                            <option id="2">Visseuse</option>
+                                            <option id="3">Perforateur</option>
                                             </select>
                                         </div>
                                     </div>

@@ -267,7 +267,7 @@ $rep = $req->fetch();
                                     <li><a href="Ajout_habilitation.php"> Ajouter une habilitation</a></li>
                                 </ul>
                             </li>
-                            <li><a data-toggle="collapse" data-target="#demodepart" href="Donner.html"> Je donne</a>
+                            <li><a data-toggle="collapse" data-target="#demodepart" href="Donner.php"> Je donne</a>
                                 <ul id="#demodepart" class="collapse dropdown-header-top">
                                      
                                      

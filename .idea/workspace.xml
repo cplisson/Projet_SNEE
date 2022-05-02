@@ -1,12 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4f0b451-9a31-44c4-a6f4-d869a7ed4e81" name="Changes" comment="Ajout favicon + visualisation des transmissions">
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2022_17_00__Changes_by_victo_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_04_2022_17_00__Changes_by_victo_.xml" afterDir="false" />
+    <list default="true" id="669ae0a4-c721-4fab-9762-83f54a4d2f38" name="Changes" comment="Ajout favicon + visualisation des transmissions">
+      <change afterPath="$PROJECT_DIR$/notika/green-horizotal/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notika/green-horizotal/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notika/green-horizotal/index_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notika/green-horizotal/login_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notika/green-horizotal/logout_test.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notika/green-horizotal/register_test.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/Gestion_E.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/Gestion_E.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/SupprEmp.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/SupprEmp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/AjoutEmp.php" beforeDir="false" afterPath="$PROJECT_DIR$/notika/green-horizotal/fonctions_php/AjoutEmp.php" afterDir="false" />
     </list>
+    <list id="9c08ddb5-ae38-4ff7-aa2d-bdcce7afc01b" name="Changes by victo" comment="Changes by victo" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,14 +61,20 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/notika/green-horizotal/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/notika/green-horizotal" />
     <property name="settings.editor.selected.configurable" value="preferences.general" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal" />
       <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal\img" />
       <recent name="C:\Users\leapa_qj1lwwf\PhpstormProjects\Projet_SNEE\notika\green-horizotal\img\logo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal" />
+      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal\Poubelle" />
+      <recent name="C:\xampp\htdocs\Projet_SNEE\notika\green-horizotal\Pages_Emp" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

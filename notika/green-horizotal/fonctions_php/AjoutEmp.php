@@ -3,7 +3,7 @@ session_start();
 include('Connexion_BD.php');
 
 
-echo 'etape 1';
+//echo 'etape 1';
 if (isset($_POST['NomEmp'])&& isset($_POST['PrenomEmp'])&& isset($_POST['MatEmp']))
 {
 
@@ -12,7 +12,7 @@ if (isset($_POST['NomEmp'])&& isset($_POST['PrenomEmp'])&& isset($_POST['MatEmp'
     $ajout_mat = htmlspecialchars($_POST["MatEmp"]);
 
 
-    echo 'etape 2';
+    //echo 'etape 2';
     if (empty($ajout_nom) or empty($ajout_prenom) or empty($ajout_mat))
     {
 
@@ -30,7 +30,7 @@ if (isset($_POST['NomEmp'])&& isset($_POST['PrenomEmp'])&& isset($_POST['MatEmp'
 
 
         $count = $req->rowcount();
-        echo 'etape 3';
+        //echo 'etape 3';
         if ($count != 0)
         {
 
@@ -60,6 +60,6 @@ if (isset($_POST['NomEmp'])&& isset($_POST['PrenomEmp'])&& isset($_POST['MatEmp'
     }
 
 }
-echo 'termine';
+//echo 'termine';
 
 ?>

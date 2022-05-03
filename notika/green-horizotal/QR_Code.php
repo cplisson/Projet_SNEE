@@ -170,7 +170,7 @@ include('Menu_Gestion_O.html');
                                     <i class="notika-icon notika-calendar"></i>
                                 </div>
                                 <div class="nk-int-st">
-                                    <input type="text" class="form-control" name="NomOUTIL" id="NomOUTIL" placeholder="Nom de l'outil">
+                                    <input type="text" class="form-control" name="NomOUTIL" id="NomOUTIL" placeholder="Numéro de l'outil">
                                 </div>
                             </div>
                         </div>

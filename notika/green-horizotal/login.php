@@ -18,7 +18,7 @@ if (isset($_POST['username'])){
     $rows = mysqli_num_rows($result);
     if($rows==0){
         $_SESSION['username'] = $username;
-        header("Location: Acceuil_CT.php");
+        header("Location: Acceuil_Admin.php");
     }else{
         $message = "Le nom d'utilisateur ou le mot de passe est incorrect.";
     }

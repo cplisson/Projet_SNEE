@@ -234,7 +234,7 @@ $rep = $req->fetch();
                         <ul class="mobile-menu-nav">
                             <li><a data-toggle="collapse" data-target="#Charts" href="#">Home</a>
                                 <ul class="collapse dropdown-header-top">
-                                    <li><a href="index.php">Dashboard One</a></li>
+                                    <li><a href="Acceuil_Admin.php">Dashboard One</a></li>
                                     <li><a href="Fich_outil.php">Fiche outil</a></li>
                                      
                                     <li><a href="Acceuil_CT.php">Acceuil CT</a></li>
@@ -314,7 +314,7 @@ $rep = $req->fetch();
                                     </li>
                                     <li><a href="color.html">Color</a>
                                     </li>
-                                    <li><a href="login-register.html">Login Register</a>
+                                    <li><a href="login.php">Login Register</a>
                                     </li>
                                     <li><a href="404.html">404 Page</a>
                                     </li>
@@ -355,7 +355,7 @@ $rep = $req->fetch();
                 <div class="tab-content custom-menu-content">
                     <div id="Home" class="tab-pane in notika-tab-menu-bg animated flipInX">
                         <ul class="notika-main-menu-dropdown">
-                            <li><a href="index.php">Dashboard One</a>
+                            <li><a href="Acceuil_Admin.php">Dashboard One</a>
                             </li>
                             <li><a href="Fich_outil.php">Fiche outil</a>
                             </li>
@@ -460,7 +460,7 @@ $rep = $req->fetch();
                             </li>
                             <li><a href="color.html">Color</a>
                             </li>
-                            <li><a href="login-register.html">Login Register</a>
+                            <li><a href="login.php">Login Register</a>
                             </li>
                             <li><a href="404.html">404 Page</a>
                             </li>

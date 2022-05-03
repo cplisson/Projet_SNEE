@@ -1,9 +1,9 @@
 <!--utile-->
 
-
-//session_start();
-//include('Menu_Gestion_E.html');
-
+<?php
+session_start();
+include('Menu_Gestion_E.html');
+?>
 
 
 <!doctype html>
@@ -77,7 +77,7 @@
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div class="normal-table-list">
                     <div class="basic-tb-hd">
-                        <h2>Outils</h2>
+                        <h2>Mes outils</h2>
                     </div>
                     <div class="bsc-tbl">
                         <table class="table table-sc-ex">

@@ -157,7 +157,7 @@ include('Menu_Home.html');
                 <div class="data-table-list">
                     <div class="basic-tb-hd">
                         <h2>Tableau de transmissions des outils</h2>
-                        <p>La tablau permet de visualiser l'état de transmission d'un outil entre deux employés. On peut utiliser la barre de recherche pour rechercher un outil par son type ou son numéro de série. On peut également filtrer la recherche par le nom ou le matricule de l'employé.</p>
+                        <p>La tableau permet de visualiser l'état de transmission d'un outil entre deux employés. On peut utiliser la barre de recherche pour rechercher un outil par son type ou son numéro de série. On peut également filtrer la recherche par le nom ou le matricule de l'employé.</p>
                     </div>
                     <div class="table-responsive">
                         <table id="data-table-basic" class="table table-striped">

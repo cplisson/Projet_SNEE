@@ -5,7 +5,7 @@
 </head>
 <body>
 <?php
-require('config.php');
+require('fonctions_php\config.php');
 session_start();
 if (isset($_POST['username'])){
     $username = stripslashes($_REQUEST['username']);
